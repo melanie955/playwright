@@ -9,3 +9,8 @@ export interface BookingDetails {
     checkout: string;
   };
 }
+
+export interface CreatedBookingDetails {
+  bookingid: number;
+  booking: BookingDetails;
+}

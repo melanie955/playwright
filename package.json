@@ -5,10 +5,10 @@
   "devDependencies": {
     "@faker-js/faker": "^8.3.1",
     "@playwright/test": "^1.40.0",
-    "@types/faker": "^6.6.9",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
     "bun-types": "latest",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.54.0",
     "factory.ts": "^1.4.1",
     "husky": "^8.0.0",
@@ -25,5 +25,10 @@
   "lint-staged": {
     "*.ts": "eslint --fix ",
     "*.{ts,md,json}": "prettier --cache --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

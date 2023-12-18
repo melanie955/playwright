@@ -32,9 +32,6 @@ test('update booking', async ({ request }) => {
 
   expect(updateResponse.ok()).toBeTruthy();
 
-  console.log('ORIGINAL', bookingResponseBody.booking.firstname);
-  console.log('UPDATED', updatedFirstName);
-
   const getResponse = await request.get(`${BOOKING_URL}/${bookingId}`);
   const getResponseBody: BookingDetails = await getResponse.json();
   expect(getResponseBody.firstname).toBe(updatedFirstName);

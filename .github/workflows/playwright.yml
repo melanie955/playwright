@@ -1,7 +1,7 @@
 name: Playwright API Tests
 on: workflow_dispatch
-environment: ci
 jobs:
+  environment: ci
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest

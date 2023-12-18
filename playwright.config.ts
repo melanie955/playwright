@@ -8,7 +8,7 @@ export default defineConfig({
   fullyParallel: false,
 
   // Reporter to use
-  reporter: 'html',
+  reporter: process.env.CI ? 'html' : 'list',
 
   use: {
     // Base URL to use in actions like `await page.goto('/')`.
